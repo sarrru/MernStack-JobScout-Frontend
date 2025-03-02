@@ -11,8 +11,8 @@ test.describe('API Authentication & User Endpoints', () => {
   test('should log in a user successfully', async ({ request }) => {
     const loginResponse = await request.post(`${BASE_URL}/user/login`, {
       data: {
-        email: "adarsha@gmail.com",
-        password: "Adarsha@123",
+        email: "iris@gmail.com",
+        password: "iris123@",
         role: "student" // Ensure role matches the registered user
       }
     });

@@ -11,8 +11,8 @@ test.describe('Profile Page Tests', () => {
 
     const loginResponse = await request.post(`http://localhost:5000/api/v1/user/login`, {
       data: {
-        email: "adarsha@gmail.com",  // ✅ Ensure this user exists in the database
-        password: "Adarsha@123",       // ✅ Ensure correct password
+        email: "iris@gmail.com",  // ✅ Ensure this user exists in the database
+        password: "iris123@",       // ✅ Ensure correct password
         role: "student"                 // ✅ Ensure correct role (Update if needed)
       }
     });

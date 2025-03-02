@@ -52,7 +52,7 @@ test.describe('API Register Endpoint', () => {
     console.log('Error Response:', responseBody);
 
     expect(response.status()).toBe(400);
-    expect(responseBody).toHaveProperty('message', 'Something is missing');
+    expect(responseBody).toHaveProperty('message', 'All fields are required.');
   });
 
   // ✅ Test for strong password validation
